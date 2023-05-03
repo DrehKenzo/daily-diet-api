@@ -193,7 +193,6 @@ describe('Meals routes', () => {
       .get('/meals/statistics')
       .set('Cookie', cookie)
 
-    console.log()
     expect(statisticsResponse.body.statistics).toEqual(
       expect.objectContaining({
         totalMeals: { count: 3 },
